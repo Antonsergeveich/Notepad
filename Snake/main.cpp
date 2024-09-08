@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+	setlocale(LC_ALL, "");
 	srand(time(0)); // запуск генератора случайных чисел
 	system("title Snake Game");
 	system("mode con cols = 70 lines = 31"); // установка размеров окна консоли
@@ -184,5 +185,6 @@ int main() {
 		}
 	} while (flag); // выходим из цикла, если сброшена управляющая переменная
 	system("cls"); // очищаем экран
-	cout << "GAME OVER\n"; // выводим сообщение о конце игры
+	cout << "\t\t\t\tGAME OVER\n" << endl;
+	cout << "\t\t\t\tНАЧИНАЙ СНАЧАЛА!!! " << endl; // выводим сообщение о конце игры
 }
